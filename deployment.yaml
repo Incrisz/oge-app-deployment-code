@@ -18,4 +18,4 @@ spec:
           image: ogdev1/oge-portfolio:v1
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8080
+            - containerPort: 80
