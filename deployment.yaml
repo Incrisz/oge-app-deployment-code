@@ -4,7 +4,7 @@ metadata:
   name: argo-app
   namespace: oge-app
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
       app: argo-app
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: incriszz/month5:v1
+          image: ogdev1/oge-portfolio:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
